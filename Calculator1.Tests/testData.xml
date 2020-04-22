@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EquationData>
+  <Equation firstNumber="25" secondNumber="32" result="57"/>
+  <Equation firstNumber="2" secondNumber="2" result="4"/>
+  <Equation firstNumber="-3" secondNumber="6" result="3"/>
+  <Equation firstNumber="0" secondNumber="0" result="0"/>
+  <Equation firstNumber="-1" secondNumber="1" result="0"/>
+</EquationData>
