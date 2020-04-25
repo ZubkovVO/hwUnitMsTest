@@ -7,27 +7,21 @@ namespace Calculator1.Tests
     public class AddTest
     {
 
-        //public TestContext TestContext{ get; set; }
-
-        /*[DataSource("Microsoft.VisualStduio.TestTools.DataSource.XML",
-            "testData.xml",
-            "Equation",
-            DataAccessMethod.Sequential)]*/
-
-        [TestMethod]
-        public void Add_10and20_30returned()
+        [DataTestMethod]
+        [DataRow(1, 1, 2)]
+        [DataRow(12, 30, 42)]
+        [DataRow(14, 1, 15)]
+        public void Add_test(double x, double y, double expected)
         {
             //arrange
-            double x = 10;
-            double y = 20;
-            double expected = 30;
 
             //act
             Calculator c = new Calculator();
-            double actual = c.Add(x, y);
+            double result = c.Add(x, y);
 
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, result);
+
         }
     }
 }

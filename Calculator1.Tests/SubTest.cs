@@ -7,13 +7,15 @@ namespace Calculator1.Tests
     public class SubTest
     {
 
-        [TestMethod]
-        public void Sub_15from30_15returned()
+        [DataTestMethod]
+        [DataRow(1, 1, 0)]
+        [DataRow(10, 5, 5)]
+        [DataRow(-10, -10, 0)]
+        [DataRow(-10, 10, -20)]
+        public void Sub_test(double x, double y, double expected)
         {
             //arrange
-            double x = 30;
-            double y = 15;
-            double expected = 15;
+
 
             //act
             Calculator c = new Calculator();
